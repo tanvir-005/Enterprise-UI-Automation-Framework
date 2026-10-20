@@ -17,12 +17,22 @@ UI automation testing for [Books to Scrape](https://books.toscrape.com/) using P
 
 ## Setup
 
+Clone the project:
+
+```bash
+git clone https://github.com/tanvir-005/Enterprise-UI-Automation-Framework.git
+cd Enterprise-UI-Automation-Framework
+```
+
 ```bash
 uv sync
 uv run playwright install chromium
 ```
 
-Create a `.env` file with `USERNAME` and `PASSWORD` for the login test.
+Create a `.env` file with `USERNAME` and `PASSWORD` for the login test. eg:
+```bash
+printf "USERNAME=u1\nPASSWORD=p1\n" > .env
+```
 
 ## Run Tests
 
