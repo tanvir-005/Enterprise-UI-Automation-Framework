@@ -6,3 +6,13 @@ BOOK_TITLE_SELECTOR = "h3 a"
 BOOK_PRICE_SELECTOR = ".price_color"
 PRODUCT_DETAILS_SELECTOR = ".product_main"
 HEADING_SELECTOR = "h1, h2, h3, h4, h5, h6"
+
+BOOK_IMAGE_SELECTOR = "article.product_pod img"
+NEXT_PAGE_SELECTOR = ".next a"
+
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+USERNAME = os.getenv("USERNAME")
+PASSWORD = os.getenv("PASSWORD")

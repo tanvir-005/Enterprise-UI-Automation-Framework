@@ -28,6 +28,9 @@ jobs:
         run: uv run playwright install --with-deps chromium
 
       - name: Run tests
+        env:
+            USERNAME: ${{ secrets.USERNAME }}
+            PASSWORD: ${{ secrets.PASSWORD }}
         run: |
           mkdir -p reports
           uv run pytest \
