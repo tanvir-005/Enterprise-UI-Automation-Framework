@@ -1,8 +1,6 @@
 from playwright.sync_api import Page, expect
 import logging
-
-HOMEPAGE_URL = "https://books.toscrape.com/index.html"
-HOMEPAGE_TITLE = "All products | Books to Scrape - Sandbox"
+from tests.config import HOMEPAGE_URL, HOMEPAGE_TITLE, BOOK_SELECTOR, HEADING_SELECTOR
 
 def test_homepage_loads(page: Page) -> None:
     page.goto(HOMEPAGE_URL)
